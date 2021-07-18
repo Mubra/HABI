@@ -194,7 +194,7 @@ Para utlitlzar la interfaz grafica y agregar un inmueble puede hacerlo en [add i
 
 ## Problema de "Me gusta".
 
-Para esta parte solo cabe mencionar que la unica recomendacion es que en el modelo inmuebles se tendra que generar un nuevo campo llamda "like" de la siguiente manera:
+Para esta parte solo cabe mencionar que la unica recomendacion es que en el modelo inmuebles se tendrá que generar un nuevo campo llamdo "like" de la siguiente manera:
 ```python
 class Inmueble(models.Model):
    ...
