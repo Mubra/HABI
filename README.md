@@ -4,6 +4,13 @@
 
 Generar una API Rest para el consumo de datos de casas.
 
+## Sobre el proyecto ...
+
+Hice una implementación sencilla sin datos para que puedan generarse ya sea usando la api o la interfaz de administrador, la idea es mostrar un proyecto base con Django para una API Rest, decidí usar Docker y docker-compose para orquestar los servicios y que se tenga todo el ecosistema de la aplicación, para facilitar su implementación así como el manejo del estándar PEP8 para su fácil lectura.
+
+Los dejo para que se diviertan y si tienen algún comentar los veo en los Issues XD
+
+
 ## Ambiente local de desarrollo
 
 Crear archivo .env (en el mismo directorio donde se encuentra docker-compose.yml) con las siguientes variables de ambiente (cambie los valores de acuerdo a su ambiente):
