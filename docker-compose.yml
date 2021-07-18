@@ -1,0 +1,47 @@
+version: '3.7'
+
+services:
+  db-habi:
+    image: postgres:11-alpine
+    environment:
+      - POSTGRES_DB=${HABI_DB_NAME}
+      - POSTGRES_USER=${HABI_DB_USER}
+      - POSTGRES_PASSWORD=${HABI_DB_PASSWORD}
+    volumes:
+      - ./postgresql/data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  #db-redis:
+  #  image: registry.redhat.io/rhscl/redis-5-rhel7
+  #  environment:
+  #    - REDIS_PASSWORD=${HABI_REDIS_PASSWORD}
+  #  volumes:
+  #    - ./redis/data:/var/lib/redis/data
+  #  user: "1001"
+  #  ports:
+  #    - "6379:6379"
+
+  svc-habi:
+    environment:
+      - DEBUG=${DEBUG}
+      - HABI_DB_HOST=db-habi
+      - HABI_DB_NAME
+      - HABI_DB_USER
+      - HABI_DB_PASSWORD
+      - HABI_DB_PORT
+      - ALLOWED_HOSTS
+    build: .
+    image: svc-habi:dev
+    command: bash -c "
+        pipenv run python manage.py migrate 
+        && pipenv run python manage.py collectstatic --noinput
+        && pipenv run gunicorn HABI.wsgi:application --bind 0.0.0.0:8000 --workers=4 --timeout=120 --capture-output --log-level=debug"
+    volumes:
+      - ./:/code
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db-habi
+
+      

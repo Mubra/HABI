@@ -1,0 +1,67 @@
+
+# ids 1-10
+- model: casas.Ciudad
+  pk: 1
+  fields:
+    nombre: Cuidad A
+    estado: 1
+- model: casas.Ciudad
+  pk: 3
+  fields:
+    nombre: Cuidad B
+    estado: 1
+- model: casas.Ciudad
+  pk: 4
+  fields:
+    nombre: Cuidad C
+    estado: 1
+- model: casas.Ciudad
+  pk: 5
+  fields:
+    nombre: Cuidad D
+    estado: 1
+
+
+# ids 11-20
+- model: casas.Ciudad
+  pk: 11
+  fields:
+    nombre: Cuidad F
+    estado: 2
+- model: casas.Ciudad
+  pk: 12
+  fields:
+    nombre: Cuidad G
+    estado: 2
+- model: casas.Ciudad
+  pk: 13
+  fields:
+    nombre: Cuidad H
+    estado: 2
+- model: casas.Ciudad
+  pk: 14
+  fields:
+    nombre: Cuidad I
+    estado: 2
+
+# ids 21-30
+- model: casas.Ciudad
+  pk: 21
+  fields:
+    nombre: Cuidad J
+    estado: 3
+- model: casas.Ciudad
+  pk: 22
+  fields:
+    nombre: Cuidad K
+    estado: 3
+- model: casas.Ciudad
+  pk: 23
+  fields:
+    nombre: Cuidad L
+    estado: 3
+- model: casas.Ciudad
+  pk: 24
+  fields:
+    nombre: Cuidad O
+    estado: 3

@@ -1,0 +1,129 @@
+- model: casas.Estado
+  pk: 1
+  fields:
+    nombre: Aguascalientes 
+
+- model: casas.Estado
+  pk: 2
+  fields:
+    nombre: Baja California 
+- model: casas.Estado
+  pk: 3
+  fields:
+    nombre: Baja California Sur 
+- model: casas.Estado
+  pk: 4
+  fields:
+    nombre: Campeche 
+- model: casas.Estado
+  pk: 5
+  fields:
+    nombre: Coahuila de Zaragoza 
+- model: casas.Estado
+  pk: 6
+  fields:
+    nombre: Colima 
+- model: casas.Estado
+  pk: 7
+  fields:
+    nombre: Chiapas 
+- model: casas.Estado
+  pk: 8
+  fields:
+    nombre: Chihuahua 
+- model: casas.Estado
+  pk: 9
+  fields:
+    nombre: Ciudad de México 
+- model: casas.Estado
+  pk: 10
+  fields:
+    nombre: Durango 
+- model: casas.Estado
+  pk: 11
+  fields:
+    nombre: Guanajuato 
+- model: casas.Estado
+  pk: 12
+  fields:
+    nombre: Guerrero 
+- model: casas.Estado
+  pk: 13
+  fields:
+    nombre: Hidalgo 
+- model: casas.Estado
+  pk: 14
+  fields:
+    nombre: Jalisco 
+- model: casas.Estado
+  pk: 15
+  fields:
+    nombre: México 
+- model: casas.Estado
+  pk: 16
+  fields:
+    nombre: Michoacán de Ocampo 
+- model: casas.Estado
+  pk: 17
+  fields:
+    nombre: Morelos 
+- model: casas.Estado
+  pk: 18
+  fields:
+    nombre: Nayarit 
+- model: casas.Estado
+  pk: 19
+  fields:
+    nombre: Nuevo León 
+- model: casas.Estado
+  pk: 20
+  fields:
+    nombre: Oaxaca 
+- model: casas.Estado
+  pk: 21
+  fields:
+    nombre: Puebla 
+- model: casas.Estado
+  pk: 22
+  fields:
+    nombre: Querétaro 
+- model: casas.Estado
+  pk: 23
+  fields:
+    nombre: Quintana Roo 
+- model: casas.Estado
+  pk: 24
+  fields:
+    nombre: San Luis Potosí 
+- model: casas.Estado
+  pk: 25
+  fields:
+    nombre: Sinaloa 
+- model: casas.Estado
+  pk: 26
+  fields:
+    nombre: Sonora 
+- model: casas.Estado
+  pk: 27
+  fields:
+    nombre: Tabasco 
+- model: casas.Estado
+  pk: 28
+  fields:
+    nombre: Tamaulipas 
+- model: casas.Estado
+  pk: 29
+  fields:
+    nombre: Tlaxcala 
+- model: casas.Estado
+  pk: 30
+  fields:
+    nombre: Veracruz de Ignacio de la Llave 
+- model: casas.Estado
+  pk: 31
+  fields:
+    nombre: Yucatán 
+- model: casas.Estado
+  pk: 32
+  fields:
+    nombre: Zacatecas 
