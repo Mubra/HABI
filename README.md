@@ -194,7 +194,7 @@ Para utlitlzar la interfaz grafica y agregar un inmueble puede hacerlo en [add i
 
 ## Problema de "Me gusta".
 
-Para esta parte solo cabe mencionar que la unica recomendacion que recomiendo es  en el modelo inmuebles generar un nuevo campo 
+Para esta parte solo cabe mencionar que la unica recomendacion es que en el modelo inmuebles se tendra que generar un nuevo campo llamda "like" de la siguiente manera:
 ```python
 class Inmueble(models.Model):
    ...
@@ -208,4 +208,4 @@ class Inmueble(models.Model):
                                   blank=True)
 ```
 
-De esta manera se generar un registro por cada usuario que se agrege al modelo del Inmueble como un "Me gusta"
+De esta manera se genera un registro por cada usuario que se agrege al modelo del Inmueble como un "Me gusta"
