@@ -191,3 +191,21 @@ en el modo desarrollo (DEBUG=True), el sistema cuenta con el endpoint `/swagger/
 o puede consultarla en el ambiente de desarrollo aqui [API desarrollo](http://localhost:8000/swagger/)
 
 Para utlitlzar la interfaz grafica y agregar un inmueble puede hacerlo en [add inmueble](http://localhost:8000/admin/casas/inmueble/add/)
+
+## Problema de "Me gusta".
+
+Para esta parte solo cabe mencionar que la unica recomendacion que recomiendo es  en el modelo inmuebles generar un nuevo campo 
+python```
+class Inmueble(models.Model):
+   ...
+    precio = models.PositiveIntegerField("Precio", null=True, blank=True,
+                                         validators=[MinValueValidator(1)])
+    # la direccion se puede manejar con relacional de modelos "estado", "cuidad", "C.P" y
+    # una pequeña descripcion para ejemplos ilustrativos se manejara como un CharField
+    direccion = models.CharField(max_length=80, null=False, blank=False)
+    like = models.ManyToManyField(User,
+                                  verbose_name='Usuarios que dan "Me gusta"',
+                                  blank=True)
+```
+
+De esta manera se generar un registro por cada usuario que se agrege al modelo del Inmueble como un "Me gusta"
