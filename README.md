@@ -195,7 +195,7 @@ Para utlitlzar la interfaz grafica y agregar un inmueble puede hacerlo en [add i
 ## Problema de "Me gusta".
 
 Para esta parte solo cabe mencionar que la unica recomendacion que recomiendo es  en el modelo inmuebles generar un nuevo campo 
-python```
+```python
 class Inmueble(models.Model):
    ...
     precio = models.PositiveIntegerField("Precio", null=True, blank=True,
