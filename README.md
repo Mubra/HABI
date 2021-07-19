@@ -190,6 +190,8 @@ Los datos iniciales de los catalogos estan definidos en [casas/fixtures/*.yaml](
 en el modo desarrollo (DEBUG=True), el sistema cuenta con el endpoint `/swagger/` donde se encuentra documentada el API,
 o puede consultarla en el ambiente de desarrollo aqui [API desarrollo](http://localhost:8000/swagger/)
 
+![API](API.png "API")
+
 Para utlitlzar la interfaz grafica y agregar un inmueble puede hacerlo en [add inmueble](http://localhost:8000/admin/casas/inmueble/add/)
 
 ## Problema de "Me gusta".
