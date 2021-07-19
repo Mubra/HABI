@@ -126,12 +126,6 @@ pipenv run isort .
 ```
 
 
-## Creacion de Administrador Principal
-
-```
-pipenv run python manage.py createsuperuser
-```
-
 
 ## Ejecute las pruebas unitarias
 
