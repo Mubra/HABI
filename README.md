@@ -27,22 +27,6 @@ HABI_DB_PORT=5432
 SERVER_NAME=<ejemplo: http://localhost:8000>
 APP_LOGLEVEL=DEBUG
 
-```
-
-Instale dependencias (desarrollo)
-
-```
-pipenv install --dev
-```
-
-
-Inicie la aplicacion en su ambiente de desarrollo local
-
-```
-pipenv run python manage.py collectstatic --no-input
-pipenv run python manage.py migrate
-pipenv run python manage.py runserver
-```
 
 Variables de ambiente
 ---------------------
@@ -183,7 +167,22 @@ pipenv run python manage.py loaddata ciudades
 
 Los datos iniciales de los catalogos estan definidos en [casas/fixtures/*.yaml](casas/fixtures/), consulte este directorio para determinar la lista de archivos actualizada.
 
+```
 
+Instale dependencias (desarrollo)
+
+```
+pipenv install --dev
+```
+
+
+Inicie la aplicacion en su ambiente de desarrollo local
+
+```
+pipenv run python manage.py collectstatic --no-input
+pipenv run python manage.py migrate
+pipenv run python manage.py runserver
+```
 
 ## API Endpoints
 
