@@ -31,7 +31,7 @@ APP_LOGLEVEL=DEBUG
 
 Variables de ambiente
 ---------------------
-```
+
 * **DEBUG** 
 
     Django DEBUG en produccion use DEBUG=False [ver Django settings](https://docs.djangoproject.com/en/2.2/ref/settings/#debug)
@@ -77,7 +77,7 @@ Variables de ambiente
 
     El protocolo y el nombre del servidor, expuesto de la aplicacion:
     `http://localhost:8000`, se usa para formar la url externa cuando se envian notificaciones por correo electronico
-```
+
     
     
 ## iniciar los contenedores bd y svc-habi (desarrollo)
@@ -168,7 +168,7 @@ pipenv run python manage.py loaddata ciudades
 
 Los datos iniciales de los catalogos estan definidos en [casas/fixtures/*.yaml](casas/fixtures/), consulte este directorio para determinar la lista de archivos actualizada.
 
-```
+
 
 Instale dependencias (desarrollo)
 
